@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'fonts';
+@import 'animation';
+@import 'components/base';
+
+
+.about-me {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+
+    &__description {
+        max-width: 688px;
+        line-height: 25px;
+    }
+
+    &__photo {
+        animation: fade-in 1s ease-in;
+        width: 420px;
+        height: 424px;
+        background-image: url('../img/about-desktop.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(max-width:@screen_tablet) {
+   .about-me {
+
+        &__description {
+            max-width: 670px;
+            order: 2;
+            text-align: center;
+            margin-top: 8px;
+            font-size: 19px;
+            line-height: 30px;
+            padding-left: 31px;
+            padding-right: 20px;
+        }
+   }
+
+}
+
+@media(max-width:@screen_mobile) {
+   .about-me {
+
+        &__description {
+                font-size: 17px;
+                line-height: 28px;
+                padding-left: 31px;
+                padding-right: 20px;
+                text-align: left;
+        }
+
+        &__photo {
+            width: 320px;
+            height: 250px;
+        }
+   }
+
+}

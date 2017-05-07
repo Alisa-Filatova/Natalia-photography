@@ -134,6 +134,26 @@
     transform: translateX(0px);
   }
 }
+@keyframes rotate-out-y {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotate-out-y {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    opacity: 0;
+  }
+}
 .menu-open {
   display: none;
 }
@@ -235,12 +255,12 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    min-width: 768px;
+    min-width: 612px;
   }
 }
 @media (max-width: 420px) {
   body {
-    min-width: 420px;
+    min-width: 320px;
   }
 }
 .header {
@@ -397,7 +417,7 @@ body {
   width: 163px;
   height: 39px;
   position: absolute;
-  bottom: 221px;
+  bottom: 58px;
   left: 340px;
   background-image: url('../img/sign.svg');
   background-repeat: no-repeat;
@@ -414,6 +434,15 @@ body {
   .contact::before,
   .contact::after {
     display: none;
+  }
+}
+@media (max-width: 961px) and (min-width: 768px) {
+  .contact {
+    box-shadow: none;
+  }
+  .contact__block {
+    transform: translateX(0px);
+    padding: 0;
   }
 }
 @media (max-width: 768px) {
@@ -471,9 +500,24 @@ body {
 .input-text:focus {
   border-color: #e9688e;
 }
+@media (max-width: 1000px) {
+  .input-text {
+    width: 312px;
+  }
+}
+@media (max-width: 824px) {
+  .input-text {
+    width: 484px;
+  }
+}
 @media (max-width: 420px) {
   .input-text {
-    width: 335px;
+    width: 312px;
+  }
+}
+@media (max-width: 364px) {
+  .input-text {
+    width: 233px;
   }
 }
 .form {
@@ -501,8 +545,9 @@ body {
   height: 70px;
   resize: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 963px) {
   .form__btn {
     align-self: center;
+    width: 100%;
   }
 }

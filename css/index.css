@@ -255,12 +255,12 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    min-width: 768px;
+    min-width: 612px;
   }
 }
 @media (max-width: 420px) {
   body {
-    min-width: 420px;
+    min-width: 320px;
   }
 }
 .header {

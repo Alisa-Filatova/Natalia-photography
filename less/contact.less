@@ -48,7 +48,7 @@
         width: 163px;
         height: 39px;
         position: absolute;
-        bottom: 221px;
+        bottom: 58px;
         left: 340px;
         background-image: url('../img/sign.svg');
         background-repeat: no-repeat;
@@ -75,6 +75,16 @@
             display: none;
         }
 
+    }
+}
+
+@media(max-width:961px) and (min-width:@screen_tablet) {
+    .contact {
+        box-shadow: none;
+        &__block {
+            transform: translateX(0px);
+            padding: 0;
+        }
     }
 }
 
@@ -146,9 +156,27 @@
     }
 }
 
+@media(max-width:1000px){
+    .input-text {
+        width: 312px;
+    }
+}
+
+@media(max-width:824px) {
+    .input-text {
+        width: 484px;
+    }
+}
+
 @media(max-width:@screen_mobile) {
         .input-text {
-            width: 335px;
+            width: 312px;
+    }
+}
+
+@media(max-width: 364px) {
+    .input-text {
+        width: 233px;
     }
 }
 
@@ -183,10 +211,11 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media(max-width:963px) {
     .form {
         &__btn {
             align-self: center;
+            width: 100%;
         }
     }
 }

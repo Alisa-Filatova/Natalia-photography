@@ -134,6 +134,26 @@
     transform: translateX(0px);
   }
 }
+@keyframes rotate-out-y {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotate-out-y {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    opacity: 0;
+  }
+}
 .menu-open {
   display: none;
 }
@@ -235,12 +255,12 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    min-width: 768px;
+    min-width: 612px;
   }
 }
 @media (max-width: 420px) {
   body {
-    min-width: 420px;
+    min-width: 320px;
   }
 }
 .header {
@@ -352,12 +372,15 @@ body {
 }
 .about-me__photo {
   animation: fade-in 1s ease-in;
-  width: 420px;
-  height: 424px;
+  width: 432px;
+  height: 452px;
   background-image: url('../img/about-desktop.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.about-me__link {
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   .about-me__description {

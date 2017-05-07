@@ -250,6 +250,15 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
 }
+.full-gallery__item {
+  animation: fade-in 1.3s ease-in;
+}
+.full-gallery__item_odd {
+   animation: fade-in 0.9s ease-in;
+}
+.full-gallery__item_even {
+   animation: fade-in 0.7s ease-in;
+}
 .footer {
   text-align: center;
   font-size: 14px;

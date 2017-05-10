@@ -16,8 +16,13 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: 1100;
+        z-index: 1600;
         outline: none;
+
+        &_hidden {
+            z-index: 10;
+            visibility: hidden;
+        }
     }
 
     @media(max-width:@screen_mobile) {
@@ -27,7 +32,4 @@
         right: 13px;
     }
 }
-
-
-
 

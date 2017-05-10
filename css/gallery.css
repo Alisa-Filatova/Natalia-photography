@@ -140,7 +140,7 @@ body {
   .main-nav_open {
     display: block;
     position: absolute;
-    top: 241px;
+    top: 97%;
     padding: 0;
     width: 100%;
     animation: slide-in-left 0.3s ease;
@@ -151,9 +151,6 @@ body {
   .main-nav__item {
     font-size: 21px;
     line-height: 54px;
-  }
-  .main-nav_open {
-    top: 141px;
   }
 }
 .menu-open {
@@ -173,8 +170,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1100;
+    z-index: 1600;
     outline: none;
+  }
+  .menu-open_hidden {
+    z-index: 10;
+    visibility: hidden;
   }
 }
 @media (max-width: 420px) {

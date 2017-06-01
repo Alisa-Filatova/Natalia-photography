@@ -14,23 +14,33 @@
         <script src="js/ie10-viewport-bug-workaround.js"></script>
 
         <link href="css/index.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="img/favicon.png"/>
+        <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
 
     <body>
         <header class="header">
-            <img 
-                class="header__image" 
-                src="img/natalia-header.svg" 
-                alt="Natalia Biriouk Photography"
-            >
+            <picture>
+                <source
+                    media="(max-width:425px)"
+                    srcset="img/natalia-header-mobile.svg"
+                >
+                <source
+                    media="(max-width:768px)"
+                    srcset="img/natalia-header-tablet.svg"
+                >
+                <img
+                    class="header__image"
+                    src="img/natalia-header.svg"
+                    alt="Natalia Biriouk Photography"
+                >
+            </picture>
             <nav class="main-nav">
                 <ul class="main-nav__items">
                     <li class="main-nav__item">
                         <a class="main-nav__link main-nav__link_active" href="index.html#">Home</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="family-gallery.html#">Family</a>
+                        <a class="main-nav__link" href="portrait-gallery.html#">Portrait</a>
                     </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="newborn-gallery.html#">Newborn</a>
@@ -39,7 +49,7 @@
                         <a class="main-nav__link" href="wedding-gallery.html#">Wedding</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="portrait-gallery.html#">Portrait</a>
+                        <a class="main-nav__link" href="family-gallery.html#">Family</a>
                     </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="event-gallery.html#">Event</a>
@@ -55,8 +65,8 @@
                     </li>
                 </ul>
             </nav>
-            <button class="close-btn main-nav__close-btn" type="button"></button>
-            <button class="menu-open main-nav__menu-open" type="button"></button>
+            <button class="close-btn main-nav__close-btn" type="button">Close</button>
+            <button class="menu-open main-nav__menu-open" type="button">Menu</button>
         </header>
 
         <section id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
@@ -70,26 +80,50 @@
             </ol>
 
             <div class="carousel-inner" role="listbox">
+
                 <div class="item active">
-                    <img src="img/1.jpg" alt="First slide">
+                    <picture>
+                        <source
+                            media="(max-width:425px)"
+                            srcset="img/4-mobile.jpg"
+                        >
+                        <source
+                            media="(max-width:768px)"
+                            srcset="img/4-tablet.jpg"
+                        >
+                        <img src="img/4.jpg"  alt="First slide">
+                    </picture>
+
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Family</h1>
+                            <h1>Portrait</h1>
                             <p>
-                                <a 
-                                    class="btn" 
-                                    href="family-gallery.html#" 
+                                <a
+                                    class="btn"
+                                    href="portrait-gallery.html#"
                                     role="button"
-                                >
+                                    >
                                     Browse gallery
                                 </a>
                             </p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="item item__odd">
-                    <img src="img/2.jpg" alt="Second slide">
+                    <picture>
+                        <source
+                            media="(max-width:425px)"
+                            srcset="img/2-mobile.jpg"
+                        >
+                        <source
+                            media="(max-width:768px)"
+                            srcset="img/2-tablet.jpg"
+                        >
+                        <img src="img/2.jpg" alt="Second slide">
+                    </picture>
+
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Newborn</h1>
@@ -107,14 +141,25 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/3.jpg"  alt="Third slide">
+                    <picture>
+                        <source
+                            media="(max-width:425px)"
+                            srcset="img/3-mobile.jpg"
+                        >
+                        <source
+                            media="(max-width:768px)"
+                            srcset="img/3-tablet.jpg"
+                        >
+                        <img src="img/3.jpg"  alt="Third slide">
+                    </picture>
+
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Wedding</h1>
                             <p>
                                 <a 
                                     class="btn" 
-                                    href="weddind-gallery.html#" 
+                                    href="wedding-gallery.html#"
                                     role="button"
                                 >
                                     Browse gallery
@@ -125,14 +170,25 @@
                 </div>
 
                 <div class="item item__odd">
-                    <img src="img/4.jpg"  alt="Fourth slide">
+                    <picture>
+                        <source
+                            media="(max-width:425px)"
+                            srcset="img/1-mobile.jpg"
+                        >
+                        <source
+                            media="(max-width:768px)"
+                            srcset="img/1-tablet.jpg"
+                        >
+                        <img src="img/1.jpg" alt="Fourth slide">
+                    </picture>
+
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Portrait</h1> 
+                            <h1>Family</h1>
                             <p>
-                                <a 
-                                    class="btn" 
-                                    href="portrait-gallery.html#" 
+                                <a
+                                    class="btn"
+                                    href="family-gallery.html#"
                                     role="button"
                                 >
                                     Browse gallery
@@ -143,7 +199,18 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/5.jpg"  alt="Fifth slide">
+                    <picture>
+                        <source
+                            media="(max-width:425px)"
+                            srcset="img/5-mobile.jpg"
+                        >
+                        <source
+                            media="(max-width:768px)"
+                            srcset="img/5-tablet.jpg"
+                        >
+                        <img src="img/5.jpg"  alt="Fifth slide">
+                    </picture>
+
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Event</h1>
@@ -161,7 +228,18 @@
                 </div>
 
                 <div class="item item__odd">
-                    <img src="img/6.jpg"  alt="Sixth slide">
+                    <picture>
+                        <source
+                            media="(max-width:425px)"
+                            srcset="img/6-mobile.jpg"
+                        >
+                        <source
+                            media="(max-width:768px)"
+                            srcset="img/6-tablet.jpg"
+                        >
+                        <img src="img/6.jpg"  alt="Sixth slide">
+                    </picture>
+
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Maternity</h1>
@@ -203,7 +281,7 @@
         <footer class="footer">
             <div class="footer__img"></div>
             <p class="copyright">
-                &copy; 2017 Natalia Biriouk photography<br> 
+                &copy; 2017 Natalia Biriouk<br>
                 made by <a class="base-link" href="http://alicedesign.ru/">alicedesign.ru</a>
             </p>
         </footer>

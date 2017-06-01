@@ -28,12 +28,25 @@
 
 .carousel {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .carousel .item {
-  height: 600px;
+  height: 550px;
   background-color: #777;
+
+  @media (max-width: @screen_desktop) {
+    height: 500px;
+  }
+
+  @media (max-width: @screen_tablet) {
+    height: 400px;
+  }
+
+  @media (min-width: 200px) and (max-width: @screen_mobile) {
+    height: 300px;
+  }
+
 }
 
 .carousel-inner > .item > img {

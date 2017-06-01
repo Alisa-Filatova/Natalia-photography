@@ -9,20 +9,24 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
+
+    &__title {
+        font-size: 27px;
+        line-height: 30px;
+        font-weight: 300;
+    }
 
     &__description {
-        max-width: 688px;
+        max-width: 648px;
         line-height: 25px;
+        padding-left: 20px;
     }
 
     &__photo {
         animation: fade-in 1s ease-in;
-        width: 432px;
-        height: 452px;
-        background-image: url('../img/about-desktop.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
+        width: 534px;
+        height: 590px;
+        background: url('../img/about-desktop.jpg') no-repeat center;
         background-size: cover;
     }
 
@@ -31,7 +35,7 @@
     }
 }
 
-@media(max-width:@screen_tablet) {
+@media (max-width: @screen_tablet) {
    .about-me {
 
         &__description {
@@ -44,25 +48,30 @@
             padding-left: 31px;
             padding-right: 20px;
         }
+
+       &__photo {
+           background-image: url('../img/about-tablet.jpg');
+           height: 400px;
+       }
    }
 
 }
 
-@media(max-width:@screen_mobile) {
+@media (max-width: @screen_mobile) {
    .about-me {
 
         &__description {
-                font-size: 17px;
-                line-height: 28px;
-                padding-left: 31px;
-                padding-right: 20px;
-                text-align: left;
+            font-size: 17px;
+            line-height: 28px;
+            padding-left: 31px;
+            padding-right: 20px;
+            text-align: left;
         }
 
         &__photo {
             width: 320px;
             height: 250px;
+            background-image: url('../img/about-mobile.jpg');
         }
    }
-
 }

@@ -17,18 +17,28 @@
     
     <body>
         <header class="header">
-            <img 
-               class="header__image" 
-               src="img/natalia-header.svg" 
-               alt="Natalia Biriouk Photography"
-            >
+            <picture>
+                <source
+                    media="(max-width:425px)"
+                    srcset="img/natalia-header-mobile.svg"
+                >
+                <source
+                    media="(max-width:768px)"
+                    srcset="img/natalia-header-tablet.svg"
+                >
+                <img
+                    class="header__image"
+                    src="img/natalia-header.svg"
+                    alt="Natalia Biriouk Photography"
+                >
+            </picture>
             <nav class="main-nav">
                 <ul class="main-nav__items">
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="index.html#">Home</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="family-gallery.html#">Family</a>
+                        <a class="main-nav__link" href="portrait-gallery.html#">Portrait</a>
                     </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="newborn-gallery.html#">Newborn</a>
@@ -37,7 +47,7 @@
                         <a class="main-nav__link" href="wedding-gallery.html#">Wedding</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="portrait-gallery.html#">Portrait</a>
+                        <a class="main-nav__link" href="family-gallery.html#">Family</a>
                     </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="event-gallery.html#">Event</a>
@@ -53,18 +63,18 @@
                     </li>
                 </ul>
             </nav>
-            <button class="close-btn main-nav__close-btn" type="button"></button>
-            <button class="menu-open main-nav__menu-open" type="button"></button>
+            <button class="close-btn main-nav__close-btn" type="button">Close</button>
+            <button class="menu-open main-nav__menu-open" type="button">Menu</button>
         </header>
 
         <section class="about-me">
             <div class="about-me__description">
-                <p class="about-me__text">Hello, I am Natalia! Welcome to my world!!</p>
+                <h2 class="about-me__title">Hello, I am Natalia! Welcome to my world!</h2>
  
                 <p class="about-me__text">
-                    I am a creative newborn, wedding and family portrait 
+                    I am a creative newborn, children, family portrait and wedding
                     photographer based in a beautiful nature in California that 
-                    enjoys working at home and (well who wouldn't) away!<br> 
+                    enjoys working at home and away!<br>
                     I have shot weddings and other events all over the California.
                 </p>
  
@@ -73,7 +83,7 @@
                     soft, romantic and thoughtful images that reflect my artistic style.<br> 
                     I am a wife to one of americans finest, a mum to a two beautiful girls 
                     who is a sucker for a good love story, (I have been known to cry at many 
-                    films... and TV adverts!!! You may even notice I often shed a few tears 
+                    films! You may even notice I often shed a few tears
                     behind my camera when capturing people in love!)<br>
                     I love a happy home full of flowers, candles, laughter, life and 
                     lots of music.
@@ -107,7 +117,7 @@
         <footer class="footer">
             <div class="footer__img"></div>
             
-            <p class="copyright">&copy; 2017 Natalia Biriouk photography<br> 
+            <p class="copyright">&copy; 2017 Natalia Biriouk<br>
                 made by 
                 <a class="base-link" href="http://alicedesign.ru/">alicedesign.ru</a>
             </p>

@@ -17,18 +17,28 @@
     
     <body>
         <header class="header">
-            <img 
-                class="header__image" 
-                src="img/natalia-header.svg" 
-                alt="Natalia Biriouk Photography"
-            >
+            <picture>
+                <source
+                    media="(max-width:425px)"
+                    srcset="img/natalia-header-mobile.svg"
+                >
+                <source
+                    media="(max-width:768px)"
+                    srcset="img/natalia-header-tablet.svg"
+                >
+                <img
+                    class="header__image"
+                    src="img/natalia-header.svg"
+                    alt="Natalia Biriouk Photography"
+                >
+            </picture>
             <nav class="main-nav">
                 <ul class="main-nav__items">
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="index.html#">Home</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="family-gallery.html#">Family</a>
+                        <a class="main-nav__link" href="portrait-gallery.html#">Portrait</a>
                     </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="newborn-gallery.html#">Newborn</a>
@@ -37,7 +47,7 @@
                         <a class="main-nav__link" href="wedding-gallery.html#">Wedding</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="portrait-gallery.html#">Portrait</a>
+                        <a class="main-nav__link" href="family-gallery.html#">Family</a>
                     </li>
                     <li class="main-nav__item">
                         <a class="main-nav__link" href="event-gallery.html#">Event</a>
@@ -53,8 +63,8 @@
                     </li>
                 </ul>
             </nav>
-            <button class="close-btn main-nav__close-btn" type="button"></button>
-            <button class="menu-open main-nav__menu-open" type="button"></button>
+            <button class="close-btn main-nav__close-btn" type="button">Close</button>
+            <button class="menu-open main-nav__menu-open" type="button">Menu</button>
         </header>
 
         <section class="contact">
@@ -77,7 +87,7 @@
                 <p class="contact__text">
                     <a class="base-link" href="tel:4104935920">
                         <i class="icon icon_phone"></i>
-                        410.493.5920
+                        +1-541-754-3010
                     </a>
                 </p>
 
@@ -142,7 +152,7 @@
         <footer class="footer">
             <div class="footer__img"></div>
             <p class="copyright">
-                &copy; 2017 Natalia Biriouk photography<br> 
+                &copy; 2017 Natalia Biriouk<br>
                 made by <a class="base-link" href="http://alicedesign.ru/">alicedesign.ru</a>
             </p>
         </footer>

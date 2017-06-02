@@ -379,7 +379,7 @@ button.gamma-btn-sspause:before {
   display: none;
 }
 .gamma-overlay {
-  background: rgba(0, 0, 0, 0.9);
+  background: #000000;
   position: fixed;
   top: 0;
   left: 0;

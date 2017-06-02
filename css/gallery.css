@@ -111,7 +111,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     margin-bottom: 0;
     line-height: 52px;
   }

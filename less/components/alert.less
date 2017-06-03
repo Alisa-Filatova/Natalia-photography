@@ -9,21 +9,19 @@
     width: 500px;
     margin-left: -(500px / 2);
     overflow: hidden;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 5px 39px rgba(0, 0, 0, 0.4);
     z-index: 2100;
     text-align: center;
     display: none;
+
 
     &_show {
         display: block;
     }
 
-    &_success &__container_header {
-        background-color: @pink;
-    }
-
+    &_success &__container_header,
     &_error &__container_header {
-        background-color: #d32424;
+        background-color: #fff;
     }
 
     &__container_content {
@@ -38,16 +36,17 @@
     &__icon {
         display: inline-block;
         vertical-align: middle;
-        width: 135px;
-        height: 135px;
-        background-size: contain;
+        width: 164px;
+        height: 124px;
 
         &_success {
             background: url('../img/success.svg') no-repeat top center;
+            background-size: cover;
         }
 
         &_error {
             background: url('../img/error.svg') no-repeat top center;
+            background-size: cover;
         }
     }
 
@@ -55,16 +54,19 @@
         border: none;
         border-radius: 3px;
         padding: 7px 57px;
+        width: 30%;
+        transition: opacity 0.2s linear;
 
         &_success {
             background-color: @pink;
+            opacity: 0.8;
 
             &:hover {
-                opacity: 0.8;
+                opacity: 1;
             }
 
             &:active {
-                opacity: 1;
+                opacity: 0.8;
             }
         }
     }
@@ -72,7 +74,7 @@
     &__title {
         display: inline-block;
         text-transform: uppercase;
-        margin: 20px auto 0;
+        margin: 0 auto;
     }
 
     &__message {

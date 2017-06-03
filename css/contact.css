@@ -357,7 +357,7 @@ body {
   width: 500px;
   margin-left: -250px;
   overflow: hidden;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 39px rgba(0, 0, 0, 0.4);
   z-index: 2100;
   text-align: center;
   display: none;
@@ -365,11 +365,9 @@ body {
 .alert_show {
   display: block;
 }
-.alert_success .alert__container_header {
-  background-color: #cd3e72;
-}
+.alert_success .alert__container_header,
 .alert_error .alert__container_header {
-  background-color: #d32424;
+  background-color: #fff;
 }
 .alert__container_content {
   background-color: #fff;
@@ -381,34 +379,38 @@ body {
 .alert__icon {
   display: inline-block;
   vertical-align: middle;
-  width: 135px;
-  height: 135px;
-  background-size: contain;
+  width: 164px;
+  height: 124px;
 }
 .alert__icon_success {
   background: url('../img/success.svg') no-repeat top center;
+  background-size: cover;
 }
 .alert__icon_error {
   background: url('../img/error.svg') no-repeat top center;
+  background-size: cover;
 }
 .alert__btn {
   border: none;
   border-radius: 3px;
   padding: 7px 57px;
+  width: 30%;
+  transition: opacity 0.2s linear;
 }
 .alert__btn_success {
   background-color: #cd3e72;
-}
-.alert__btn_success:hover {
   opacity: 0.8;
 }
-.alert__btn_success:active {
+.alert__btn_success:hover {
   opacity: 1;
+}
+.alert__btn_success:active {
+  opacity: 0.8;
 }
 .alert__title {
   display: inline-block;
   text-transform: uppercase;
-  margin: 20px auto 0;
+  margin: 0 auto;
 }
 .alert__message {
   margin-top: 5px;

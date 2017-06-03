@@ -375,7 +375,6 @@ body {
 }
 .carousel .item {
   height: 550px;
-  background-color: #777;
 }
 @media (max-width: 1280px) {
   .carousel .item {

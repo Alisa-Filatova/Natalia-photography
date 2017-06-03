@@ -1,6 +1,6 @@
 {
   "name": "nataliaphoto",
-  "privat": true,
+  "private": true,
   "version": "1.0.0",
   "description": "Сайт-портфолио фотографа Natalia Biriouk",
   "main": "index.js",

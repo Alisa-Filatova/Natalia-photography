@@ -12,11 +12,37 @@ body {
     min-width: 320px;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: @white;
 }
 
 .header {
     position: relative;
+    background: url('../img/natalia-header.svg') no-repeat top center, @white;
+    background-size: contain;
+
+    &__logo {
+        width: 23%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (max-width: @screen_tablet) {
+    .header {
+        background: none;
+
+        &__logo {
+            width: 70%;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: @screen_mobile) {
+    .header {
+        &__logo {
+            width: 100%;
+        }
+    }
 }
 
 .main-nav {

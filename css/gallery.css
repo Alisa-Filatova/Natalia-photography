@@ -69,6 +69,27 @@ body {
 }
 .header {
   position: relative;
+  background: url('../img/natalia-header.svg') no-repeat top center, #ffffff;
+  background-size: contain;
+}
+.header__logo {
+  width: 23%;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .header {
+    background: none;
+  }
+  .header__logo {
+    width: 70%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 425px) {
+  .header__logo {
+    width: 100%;
+  }
 }
 .main-nav__items {
   display: flex;
@@ -124,10 +145,7 @@ body {
     width: 100%;
     font-size: 20px;
     font-weight: 500;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 100px;
   }
   .main-nav_open {
     display: block;
@@ -392,6 +410,7 @@ button.gamma-btn-sspause:before {
 .gamma-single-view img {
   position: absolute;
   cursor: pointer;
+
 }
 .gamma-nav span {
   position: absolute;

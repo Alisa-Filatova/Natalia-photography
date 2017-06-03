@@ -46,92 +46,20 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in-right {
+@-webkit-keyframes fade-out {
   0% {
-    -webkit-transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0%);
     opacity: 1;
   }
-}
-@keyframes fade-in-right {
-  0% {
-    transform: translateX(-100%);
+  100% {
     opacity: 0;
   }
-  100% {
-    transform: translateX(0%);
+}
+@keyframes fade-out {
+  0% {
     opacity: 1;
   }
-}
-@-webkit-keyframes fade-in-down {
-  0% {
-    -webkit-transform: translateY(-100%);
+  100% {
     opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-down {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slide-in-down {
-  0% {
-    -webkit-transform: translateY(-1000px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-  }
-}
-@keyframes slide-in-down {
-  0% {
-    transform: translateY(-1000px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-@-webkit-keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(-2000px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-  }
-}
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(-2000px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(2000px);
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(2000px);
-  }
-  100% {
-    transform: translateX(0px);
   }
 }
 @keyframes rotate-out-y {
@@ -259,10 +187,30 @@ body {
   min-width: 320px;
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #ffffff;
 }
 .header {
   position: relative;
+  background: url('../img/natalia-header.svg') no-repeat top center, #ffffff;
+  background-size: contain;
+}
+.header__logo {
+  width: 23%;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .header {
+    background: none;
+  }
+  .header__logo {
+    width: 70%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 425px) {
+  .header__logo {
+    width: 100%;
+  }
 }
 .main-nav__items {
   display: flex;
@@ -439,8 +387,9 @@ body {
   }
   .ios-safari .carousel-inner > .item.next,
   .ios-safari .carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: none;
+    transform: none;
+    animation: fade-out 1.23s ease-in-out;
   }
   .carousel-inner > .item.prev,
   .carousel-inner > .item.active.left {
@@ -448,12 +397,25 @@ body {
     transform: translate3d(-100%, 0, 0);
     left: 0;
   }
+  .ios-safari .carousel-inner > .item.prev,
+  .ios-safari .carousel-inner > .item.active.left {
+    -webkit-transform: none;
+    transform: none;
+    animation: fade-out 1.2s ease-in-out;
+  }
   .carousel-inner > .item.next.left,
   .carousel-inner > .item.prev.right,
   .carousel-inner > .item.active {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     left: 0;
+  }
+  .ios-safari .carousel-inner > .item.next.left,
+  .ios-safari .carousel-inner > .item.prev.right,
+  .ios-safari .carousel-inner > .item.active {
+    -webkit-transform: none;
+    transform: none;
+    animation: fade-in 1.2s ease-in-out;
   }
 }
 .carousel-inner > .active,

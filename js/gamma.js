@@ -364,7 +364,14 @@ var Gamma = (function() {
 			}
 			else if( id === undefined ) {
 
-				History.pushState( null, null, url('protocol') + '://' + url('hostname') + url('path') );
+				var protocol = url('protocol');
+				var hostname = url('hostname');
+				var port = url('port');
+				var path = url('path');
+
+				var address = protocol + '://' + hostname + (port !== 80 ? ':' + port : '') + path;
+
+				History.pushState( null, null, address );
 
 			}
 			// adds a new state to the history object

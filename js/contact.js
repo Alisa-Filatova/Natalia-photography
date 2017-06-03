@@ -13,6 +13,7 @@ $('.contact__form form').on('submit', function(event) {
 
     request.done(function() {
         $success.addClass('alert_show');
+        $this.get(0).reset();
     });
 
     request.fail(function() {

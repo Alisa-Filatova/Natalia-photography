@@ -1,0 +1,21 @@
+{
+  "name": "nataliaphoto",
+  "privat": true,
+  "version": "1.0.0",
+  "description": "Сайт-портфолио фотографа Natalia Biriouk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "ssh -i ~/.ssh/aws.pem aws sudo ./deploy.sh natalia-photo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisa-Filatova/Natalia-photography.git"
+  },
+  "author": "Alisa Filatova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alisa-Filatova/Natalia-photography/issues"
+  },
+  "homepage": "https://github.com/Alisa-Filatova/Natalia-photography#readme"
+}

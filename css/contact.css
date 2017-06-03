@@ -344,6 +344,7 @@ body {
   padding: 7px 57px;
   width: 30%;
   transition: opacity 0.2s linear;
+  cursor: pointer;
 }
 .alert__btn_success {
   background-color: #cd3e72;

@@ -1,15 +1,11 @@
 @import 'controls/btn';
 @import '../variables';
+@import '../mixins';
 
 .alert {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    width: 500px;
-    margin-left: -(500px / 2);
+    .alignment(fixed, 500px);
     overflow: hidden;
-    box-shadow: 0 5px 39px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 39px fade(@black, 40%);
     z-index: 2100;
     text-align: center;
     display: none;

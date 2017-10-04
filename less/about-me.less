@@ -1,13 +1,12 @@
 @import 'variables';
+@import 'mixins';
 @import 'fonts';
 @import 'animation';
 @import 'components/base';
 
 
 .about-me {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    .flex-wrapper(row, space-around, wrap);
     align-items: center;
 
     &__title {
